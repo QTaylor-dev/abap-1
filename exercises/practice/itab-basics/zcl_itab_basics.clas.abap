@@ -40,7 +40,13 @@ ENDCLASS.
 
 CLASS zcl_itab_basics IMPLEMENTATION.
   METHOD fill_itab.
-    "add solution here
+    itab_data_type = value #( (group = 'A' number = '10'  description = 'GROUP A-2')
+                              (group = 'B' number = '5'   description = 'GROUP B'  )
+                              (group = 'A' number = '6'   description = 'GROUP A-1')
+                              (group = 'C' number = '22'  description = 'GROUP C-1')                              
+                              (group = 'A' number = '13'  description = 'GROUP A-3')    
+                              (group = 'C' number = '500' description = 'GROUP C-2')  ).
+
   ENDMETHOD.
 
   METHOD add_to_itab.
